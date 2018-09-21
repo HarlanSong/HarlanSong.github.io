@@ -108,9 +108,8 @@ startActivity(intent);
 ```java
 Uri installUri = Uri.fromParts("package",strPackageName, null);
 returnIt = newIntent(Intent.ACTION_PACKAGE_ADDED, installUri);
-说明：安装包名为strPackageName的程序。
 ```
- 
+ 说明：安装包名为strPackageName的程序。
 
 ## 启动应用市场
 

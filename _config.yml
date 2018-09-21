@@ -43,7 +43,6 @@ gems: [jekyll-paginate]
 
 
 
-
 # Markdown settings
 # replace redcarpet to kramdown,
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
@@ -62,11 +61,11 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: f2c84e7629bb1446c1a4                            #生成的clientID
-  clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
+  clientID: 2009f3ee1179ef19350a                            #生成的clientID
+  clientSecret: bdc64cf6e98d633f8956970c4390ee1fd6b5d330    #生成的clientSecret
   repo: HarlanSong.github.io    #仓库名称
-  owner: harlansong   #github用户名
-  admin: harlansong
+  owner: 651193340@qq.com   #github用户名
+  admin: HarlanSong
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
@@ -79,8 +78,6 @@ ba_track_id: b50bf2b12b5338a1845e33832976fd68
 # Google Analytics
 ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
 ga_domain: songhaqing.cn               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
-
-
 
 
 

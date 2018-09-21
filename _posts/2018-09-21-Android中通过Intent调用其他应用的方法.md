@@ -1,4 +1,4 @@
-### 浏览器打开连接
+## 浏览器打开连接
 
 ```java
 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));  
@@ -6,13 +6,13 @@ startActivity(intent);
 ```
  
 
-### 启动拨号程序
+## 启动拨号程序
 ```java
 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:186xxxxxxxx"));
 startActivity(intent);
 ```
 
-### 发送短信
+## 发送短信
 
 ```java
 Uri smsUri = Uri.parse(url);
@@ -21,21 +21,21 @@ intent.setType("vnd.android-dir/mms-sms");
 startActivity(intent);
 ```
 
-### 启动通讯录
+## 启动通讯录
 
 ```java
 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("content://contacts/people/1"));
 startActivity(intent);
 ```
 
-### 启动地图程序（Google Maps等）
+## 启动地图程序（Google Maps等）
 ```java
 Uri mapUri = Uri.parse(url);
 Intent intent = new Intent(Intent.ACTION_VIEW, mapUri);
 startActivity(intent);
 ```
 
-### 启动邮件程序
+## 启动邮件程序
 
 ```java
 Uri uri =Uri.parse("mailto:harlansong@qq.com");
@@ -46,9 +46,7 @@ startActivity(intent);
 ```
 说明：启动邮件程序并将收件人设为harlansong@qq.com，邮件主题设为Hello world，内容设为Ganbarimasu。
 
- 
-
-### 启动邮件程序并添加多个收件人
+## 启动邮件程序并添加多个收件人
 
 ```java
 Intent intent=new Intent(Intent.ACTION_SEND);     
@@ -62,7 +60,7 @@ intent.setType("message/rfc822");
 startActivity(Intent.createChooser(intent,"Choose Email Client"));
 ```
 
-### 启动邮件程序并添加附件
+## 启动邮件程序并添加附件
 
 ```java
 Intent intent = newIntent(Intent.ACTION_SEND);   
@@ -72,7 +70,7 @@ sendIntent.setType("audio/mp3");
 startActivity(Intent.createChooser(intent,"Choose Email Client"));
 ```
 
-### 播放音乐文件
+## 播放音乐文件
 
 ```java
 Intent intent = new Intent(Intent.ACTION_VIEW);
@@ -82,7 +80,7 @@ startActivity(intent);
 ```
  
 
-卸载程序
+## 卸载程序
 
 ```java
 Uri uri =Uri.fromParts("package", strPackageName, null);   
@@ -92,8 +90,7 @@ startActivity(intent);
 说明：卸载包名为strPackageName的程序。
 
  
-
-安装程序
+## 安装程序
 
 ```java
 Uri installUri = Uri.fromParts("package",strPackageName, null);
@@ -102,7 +99,7 @@ returnIt = newIntent(Intent.ACTION_PACKAGE_ADDED, installUri);
 ```
  
 
-### 启动应用市场
+## 启动应用市场
 
 ```java
 Uri uri=Uri.parse("market://search?q=pname:org.breezesoft.techolite");

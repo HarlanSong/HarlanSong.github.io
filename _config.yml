@@ -65,7 +65,7 @@ gitalk:
   clientSecret: bdc64cf6e98d633f8956970c4390ee1fd6b5d330    #生成的clientSecret
   repo: HarlanSong.github.io    #仓库名称
   owner: 651193340@qq.com   #github用户名
-  admin: HarlanSong
+  admin: 651193340@qq.com
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 

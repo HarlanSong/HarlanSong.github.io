@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      ClientAbortException异常问题
-subtitle:   org.apache.catalina.connector.ClientAbortException: java.io.IOException: APR error: -730054
+subtitle:   ClientAbortException异常问题
 date:       2018-09-21
 author:     HarlanSong
 header-img: img/upload/aa97c67c8c1d79a0ce94c0fee2a30bfd8838df307da2f-RPC97X.jpg

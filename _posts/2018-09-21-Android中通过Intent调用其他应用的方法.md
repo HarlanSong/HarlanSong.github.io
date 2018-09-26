@@ -1,6 +1,5 @@
 ---
 layout:     post
-title:      Android中通过Intent调用其他应用的方法
 subtitle:   Intent跳转功能
 date:       2018-09-21
 author:     HarlanSong

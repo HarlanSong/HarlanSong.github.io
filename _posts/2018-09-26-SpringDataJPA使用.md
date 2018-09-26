@@ -1,6 +1,5 @@
 ---
 layout:     post
-title:      SpringDataJPA使用探究
 subtitle:   SpringDataJPA使用探究
 date:       2018-09-26
 author:     HarlanSong

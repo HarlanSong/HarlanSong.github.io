@@ -76,7 +76,7 @@ gitalk:
 #ba_track_id: 
 
 #CNZZ
-cnzz_id=1000491213
+cnzz_id: 1000491213
 
 # Google Analytics
 #ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx

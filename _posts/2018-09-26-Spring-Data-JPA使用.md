@@ -9,7 +9,7 @@ catalog: true
 tags:
     - Spring
     - JPA
-	- Java
+    - Java
 ---
 
 这里就滤过Spring Data JPA项目部署，不清楚的可以看一下开源项目[AutoAdmin](https://github.com/HarlanSong/AutoAdmin/tree/master/AutoAdmin-JPA)。

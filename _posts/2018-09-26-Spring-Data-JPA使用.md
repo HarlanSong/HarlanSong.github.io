@@ -193,6 +193,10 @@ SysUser findFirstByAccount(String account);
 SysUser findTop10ByAccount(String account);
 ```
 
+**排序**
+```java
+SysUser findTop10ByAccount(String account);
+```
 
 
 ## JPA语法
@@ -201,7 +205,7 @@ SysUser findTop10ByAccount(String account);
 |---|---|---|
 |And | findByLastnameAndFirstname | … where x.lastname = ?1 and x.firstname = ?2|
 |Or | findByLastnameOrFirstname | … where x.lastname = ?1 or x.firstname = ?2|
-|Is,Equals | findByFirstname,findByFirstnameIs,findByFirstnameEquals|… where x.firstname = ?1|
+|Is,Equals | findByFirstname<br>findByFirstnameIs<br>findByFirstnameEquals|… where x.firstname = ?1|
 |Between | findByStartDateBetween | … where x.startDate between ?1 and ?2|
 |LessThan | findByAgeLessThan | … where x.age < ?1|
 |LessThanEqual | findByAgeLessThanEqual | … where x.age <= ?1|

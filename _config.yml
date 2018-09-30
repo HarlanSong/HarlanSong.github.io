@@ -4,7 +4,7 @@ SEOTitle: HarlanSong
 header-img: img/post-bg-home.jpg
 email: harlansong@qq.com
 description: "HarlanSong个人博客"
-keyword: "HarlanSong,java,android,开发，程序员"
+keyword: "HarlanSong,java,android,开发,程序员"
 url: "http://harlansong.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/HarlanSong/HarlanSong.github.io.git" # you code repository

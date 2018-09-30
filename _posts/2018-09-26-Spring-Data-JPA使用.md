@@ -164,7 +164,9 @@ public interface SysUserRepository extends JpaRepository<SysUser, Long>,JpaSpeci
 }
 ```
 
-**根据单查询（一条结果）**
+## 查询
+
+### 根据单查询（一条结果）
 
 ```java
 SysUser findByAccount(String account);
@@ -172,34 +174,33 @@ SysUser findByAccount(String account);
 *需要确保返回的结果最多只有一条，否则会报错*
 
 
-**根据单查询（多条结果）**
+### 根据单查询（多条结果）
 ```java
 List<SysUser> findByAccount(String account);
 ```
 
-**多条件查询**
+### 多条件查询
 ```java
 SysUser findByAccountAndPassword(String account, String password);
 ```
 
-**查询第一条**
+### 查询第一条
 ```java
 SysUser findFirstByAccount(String account);
 ```
 
-
-**查询前10条**
+### 查询前10条
 ```java
 SysUser findTop10ByAccount(String account);
 ```
 
-**排序**
+### 排序
 ```java
 SysUser findTop10ByAccount(String account);
 ```
 
 
-## JPA语法
+### JPA语法
 
 |Keyword|Sample|JPQL snippet|
 |---|---|---|
@@ -229,8 +230,37 @@ SysUser findTop10ByAccount(String account);
 |IgnoreCase | findByFirstnameIgnoreCase | … where UPPER(x.firstame) = UPPER(?1)|
 
 
-待更新....
+### 分页复杂查询
 
+**示例**
+
+```java
+List<Sort.Order> orders = new ArrayList<>();
+orders.add(new Sort.Order(Sort.Direction.DESC,"id"));
+Sort sort = new Sort(orders);
+Page<SysUser> page = sysUserRepository.findAll(new Specification<SysUser>(){
+    @Override
+    public Predicate toPredicate(Root<SysUser> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
+        List<Predicate> predicate = new ArrayList<>();
+        // 此处添加过滤条件
+        Predicate[] pre = new Predicate[predicate.size()];
+        return criteriaQuery.where(predicate.toArray(pre)).getRestriction();
+    }
+},new PageRequest(query.getPage() - 1, query.getLimit(),sort));
+BaseResponseList<SysUserViewModel> result = new BaseResponseList<>();
+result.setCount(page.getTotalElements());
+List<SysUserViewModel> models = new ArrayList<>();
+for (SysUser sysUser : page.getContent()) {
+    SysUserViewModel model = new SysUserViewModel();
+    model.setId(sysUser.getId());
+    model.setAccount(sysUser.getAccount());
+    model.setName(sysUser.getName());
+    models.add(model);
+}
+result.setData(models);
+return result;
+```
+*此例中结合了分页、排序、过滤功能。*
 
 
 **参考**

@@ -1,3 +1,15 @@
+---
+layout:     post
+subtitle:   Android Studio快捷键
+date:       2018-09-20
+author:     HarlanSong
+header-img: img/upload/aa97c67c8c1d79a0ce94c0fee2a30bfd8838df307da2f-RPC97X.jpg
+catalog: 	 true
+tags:
+    - Android
+    - Android Studio
+---
+
 Ctrl+G / Ctrl+Alt+Shift+G：查询变量或者函数或者类在哪里被使用或被调用，后者是前者的复杂表现，可以选择查询范围等。
 
 Alt+H：查找功能，全局查找

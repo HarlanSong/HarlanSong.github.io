@@ -1,6 +1,6 @@
 ---
 layout:     post
-subtitle:   Android Studio快捷键
+title:   Android Studio快捷键
 date:       2018-09-20
 author:     HarlanSong
 header-img: img/upload/aa97c67c8c1d79a0ce94c0fee2a30bfd8838df307da2f-RPC97X.jpg

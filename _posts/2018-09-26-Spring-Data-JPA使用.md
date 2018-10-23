@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      Spring Data JPA 使用探究
-subtitle:   Spring Data JPA 使用探究
 date:       2018-09-26
 author:     HarlanSong
 header-img: img/upload/bg_spring.jpg

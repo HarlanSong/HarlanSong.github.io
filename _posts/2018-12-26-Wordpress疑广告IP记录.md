@@ -3,7 +3,6 @@ layout:     post
 title:      Wordpress疑广告IP记录
 date:       2018-12-26
 author:     HarlanSong
-header-img: img/upload/wordpress-banner.png
 catalog: true
 tags:
     - wordpress
